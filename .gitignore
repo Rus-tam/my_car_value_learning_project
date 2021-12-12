@@ -1,0 +1,7 @@
+# compiled output
+/dist
+/node_modules
+db.sqlite
+
+# IDEs and editors
+/.idea
