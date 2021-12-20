@@ -63,7 +63,7 @@ describe('AuthService', () => {
 
   it('throws if signin is called with and unused email', async () => {
     await expect(
-      service.signin('asdfasdf@asdf.com', 'asdfsadf'),
+      service.signin('asdfasdf1@asdf.com', 'asdfsadf'),
     ).rejects.toThrowError(NotFoundException);
   });
 
