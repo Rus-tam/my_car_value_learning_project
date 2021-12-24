@@ -33,7 +33,7 @@ describe('UsersController', () => {
       // signup: () => {},
       signin: (email: string, password: string) => {
         return Promise.resolve({ id: 1, email, password } as User);
-      }
+      },
     };
 
     const module: TestingModule = await Test.createTestingModule({
@@ -63,7 +63,7 @@ describe('UsersController', () => {
   //   expect(users[0].email).toEqual('asdf@asdf.com');
   // });
 
-  it('findUser returns a single user with the given id', async() => {
+  it('findUser returns a single user with the given id', async () => {
     const user = await controller.findUser('1');
     expect(user).toBeDefined();
   });
